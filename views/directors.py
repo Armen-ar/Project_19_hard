@@ -9,14 +9,16 @@ director_ns = Namespace('directors')
 @director_ns.route('/')
 class DirectorsView(Resource):
     def get(self):
+        """Представление возвращает всех режиссёров"""
         rs = director_service.get_all()
         res = DirectorSchema(many=True).dump(rs)
         return res, 200
 
 
-@director_ns.route('/<int:rid>')
+@director_ns.route('/<int:uid>')
 class DirectorView(Resource):
-    def get(self, rid):
-        r = director_service.get_one(rid)
+    def get(self, uid):
+        """Представление возвращает режиссёра по id"""
+        r = director_service.get_one(uid)
         sm_d = DirectorSchema().dump(r)
         return sm_d, 200

@@ -10,6 +10,7 @@ movie_ns = Namespace('movies')
 @movie_ns.route('/')
 class MoviesView(Resource):
     def get(self):
+        """Представление возвращает все фильмы или фильмы по режиссёрам, жанрам и годам"""
         director = request.args.get("director_id")
         genre = request.args.get("genre_id")
         year = request.args.get("year")
@@ -23,25 +24,37 @@ class MoviesView(Resource):
         return res, 200
 
     def post(self):
+        """Представление добавляет новый фильм"""
         req_json = request.json
         movie = movie_service.create(req_json)
         return "", 201, {"location": f"/movies/{movie.id}"}
 
 
-@movie_ns.route('/<int:bid>')
+@movie_ns.route('/<int:mid>')
 class MovieView(Resource):
-    def get(self, bid):
-        b = movie_service.get_one(bid)
+    def get(self, mid):
+        """Представление возвращает фильм по id"""
+        b = movie_service.get_one(mid)
         sm_d = MovieSchema().dump(b)
         return sm_d, 200
 
-    def put(self, bid):
+    def put(self, mid):
+        """Представление обновляет фильм по id"""
         req_json = request.json
         if "id" not in req_json:
-            req_json["id"] = bid
+            req_json["id"] = mid
         movie_service.update(req_json)
         return "", 204
 
-    def delete(self, bid):
-        movie_service.delete(bid)
+    def delete(self, mid):
+        """Представление удаляет фильм по id"""
+        movie_service.delete(mid)
+        return "", 204
+
+    def patch(self, mid):
+        """Представление обновляет частично фильм по id"""
+        req_json = request.json
+        if "id" not in req_json:
+            req_json["id"] = mid
+        movie_service.update_partical(req_json)
         return "", 204

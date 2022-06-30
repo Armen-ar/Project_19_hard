@@ -5,18 +5,25 @@ class DirectorService:
     def __init__(self, dao: DirectorDAO):
         self.dao = dao
 
-    def get_one(self, bid):
-        return self.dao.get_one(bid)
+    def get_one(self, did):
+        """Метод возвращает режиссёра по id"""
+        return self.dao.get_one(did)
 
     def get_all(self):
+        """Метод возвращает всех режиссёров"""
         return self.dao.get_all()
 
-    def create(self, director_d):
-        return self.dao.create(director_d)
+    def create(self, director_data):
+        """Метод добавляет нового режиссёра"""
+        return self.dao.create(director_data)
 
-    def update(self, director_d):
-        self.dao.update(director_d)
+    def delete(self, did):
+        """Метод удаляет данные режиссёра по id"""
+        self.dao.delete(did)
+
+    def update(self, director_data):
+        """Метод обновляет данные режиссёра"""
+        self.dao.update(director_data)
         return self.dao
 
-    def delete(self, rid):
-        self.dao.delete(rid)
+
