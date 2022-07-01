@@ -6,56 +6,56 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFyb
 
 GET http://127.0.0.1:5000/movies/?director_id=12
 Accept: application/json
-Authorization: Bearer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
 
 ###
 
 GET http://127.0.0.1:5000/movies/?genre_id=4
 Accept: application/json
-Authorization: Bearer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
 
 ###
 
 GET http://127.0.0.1:5000/movies/?year=2020
 Accept: application/json
-Authorization: Bearer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
 
 ###
 
 GET http://127.0.0.1:5000/directors/
 Accept: application/json
-Authorization: Bearer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
 
 ###
 
 GET http://127.0.0.1:5000/directors/1
 Accept: application/json
-Authorization: Bearer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
 
 ###
 
 GET http://127.0.0.1:5000/genres/
 Accept: application/json
-Authorization: Bearer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
 
 ###
 
 GET http://127.0.0.1:5000/genres/5
 Accept: application/json
-Authorization: Bearer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
 
 ###
 
-GET http://127.0.0.1:5000/movies/22
+GET http://127.0.0.1:5000/movies/23
 Accept: application/json
-Authorization: Bearer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
 
 ###
 
 POST http://127.0.0.1:5000/movies/
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
 
 {
   "title": "Гарри Поттер мой кумир!",
@@ -67,10 +67,10 @@ Authorization: Bearer
 
 ###
 
-PUT http://127.0.0.1:5000/movies/22
+PUT http://127.0.0.1:5000/movies/23
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
 
 {
   "title": "-------",
@@ -87,7 +87,7 @@ Authorization: Bearer
 PATCH http://127.0.0.1:5000/movies/22
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
 
 {
   "description": "0 из 5!"
@@ -95,8 +95,8 @@ Authorization: Bearer
 
 ###
 
-DELETE http://127.0.0.1:5000/movies/22
-Authorization: Bearer
+DELETE http://127.0.0.1:5000/movies/23
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
 
 ###
 
