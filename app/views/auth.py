@@ -15,7 +15,7 @@ class AuthsView(Resource):
         password = reg_json.get("password", None)
 
         if None in [username, password]:
-            return "", 400
+            return "", 401
 
         tokens = auth_service.generate_tokens(username, password)
 

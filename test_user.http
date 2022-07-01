@@ -1,11 +1,13 @@
 GET http://127.0.0.1:5000/users/
 Accept: application/json
+Authorization: Bearer
 
 ###
 
 POST http://127.0.0.1:5000/users/
 Accept: application/json
 Content-Type: application/json
+Authorization: Bearer
 
 {
   "username": "Armen",
@@ -17,6 +19,6 @@ Content-Type: application/json
 
 DELETE http://127.0.0.1:5000/users/4
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA0OTg2fQ.ZCPXpiIkzkJQUINo8qUNZ5ZFoPkZuwTg3RmSLXkoKJY
+Authorization: Bearer
 
 ###

@@ -1,3 +1,30 @@
+GET http://127.0.0.1:5000/movies
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
+
+<> 2022-07-01T224808.200.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Armen",
+  "password": "test"
+}
+
+<> 2022-07-01T224703.201.json
+
+###
+
+GET http://127.0.0.1:5000/movies
+Accept: application/json
+
+<> 2022-07-01T224614.401.json
+
+###
+
 GET http://127.0.0.1:5000/users/
 Accept: application/json
 
@@ -515,42 +542,6 @@ Content-Type: application/json
 }
 
 <> 2022-07-01T214215.201.json
-
-###
-
-POST http://127.0.0.1:5000/auth/
-Content-Type: application/json
-
-{
-  "username": "Elina",
-  "password": "hello"
-}
-
-<> 2022-07-01T214152.404.html
-
-###
-
-POST http://127.0.0.1:5000/auth/
-Content-Type: application/json
-
-{
-  "username": "Elina",
-  "password": "hello"
-}
-
-<> 2022-07-01T214131.404.html
-
-###
-
-POST http://127.0.0.1:5000/auth/
-Content-Type: application/json
-
-{
-  "username": "Elina",
-  "password": "hello"
-}
-
-<> 2022-07-01T214113.404.html
 
 ###
 

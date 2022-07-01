@@ -2,6 +2,7 @@ from flask import request
 from flask_restx import Resource, Namespace
 
 from app.dao.model.movie import MovieSchema
+from app.helpers.decorators import auth_required, admin_required
 from app.implemented import movie_service
 
 movie_ns = Namespace('movies')
@@ -9,6 +10,7 @@ movie_ns = Namespace('movies')
 
 @movie_ns.route('/')
 class MoviesView(Resource):
+    @auth_required
     def get(self):
         """Представление возвращает все фильмы или фильмы по режиссёрам, жанрам и годам"""
         director = request.args.get("director_id")
@@ -23,6 +25,7 @@ class MoviesView(Resource):
         res = MovieSchema(many=True).dump(all_movies)
         return res, 200
 
+    @admin_required
     def post(self):
         """Представление добавляет новый фильм"""
         req_json = request.json
@@ -32,12 +35,14 @@ class MoviesView(Resource):
 
 @movie_ns.route('/<int:mid>')
 class MovieView(Resource):
+    @auth_required
     def get(self, mid):
         """Представление возвращает фильм по id"""
         b = movie_service.get_one(mid)
         sm_d = MovieSchema().dump(b)
         return sm_d, 200
 
+    @admin_required
     def put(self, mid):
         """Представление обновляет фильм по id"""
         req_json = request.json
@@ -46,11 +51,13 @@ class MovieView(Resource):
         movie_service.update(req_json)
         return "", 204
 
+    @admin_required
     def delete(self, mid):
         """Представление удаляет фильм по id"""
         movie_service.delete(mid)
         return "", 204
 
+    @admin_required
     def patch(self, mid):
         """Представление обновляет частично фильм по id"""
         req_json = request.json
