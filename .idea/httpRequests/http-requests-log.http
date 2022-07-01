@@ -1,0 +1,556 @@
+GET http://127.0.0.1:5000/users/
+Accept: application/json
+
+<> 2022-07-01T222331.200.json
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Armen",
+  "password": "test",
+  "role": "admin"
+}
+
+<> 2022-07-01T222327.201.json
+
+###
+
+GET http://127.0.0.1:5000/users/
+Accept: application/json
+
+<> 2022-07-01T222319.200.json
+
+###
+
+DELETE http://127.0.0.1:5000/users/4
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA0OTg2fQ.ZCPXpiIkzkJQUINo8qUNZ5ZFoPkZuwTg3RmSLXkoKJY
+
+###
+
+GET http://127.0.0.1:5000/users/
+Accept: application/json
+
+<> 2022-07-01T222305.200.json
+
+###
+
+DELETE http://127.0.0.1:5000/users/3
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA0OTg2fQ.ZCPXpiIkzkJQUINo8qUNZ5ZFoPkZuwTg3RmSLXkoKJY
+
+###
+
+GET http://127.0.0.1:5000/users/
+Accept: application/json
+
+<> 2022-07-01T222236.200.json
+
+###
+
+DELETE http://127.0.0.1:5000/users/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA0OTg2fQ.ZCPXpiIkzkJQUINo8qUNZ5ZFoPkZuwTg3RmSLXkoKJY
+
+###
+
+DELETE http://127.0.0.1:5000/users/2
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA0OTg2fQ.ZCPXpiIkzkJQUINo8qUNZ5ZFoPkZuwTg3RmSLXkoKJY
+
+###
+
+DELETE http://127.0.0.1:5000/users/2
+Content-Type: application/json
+Authorization: TOKEN
+
+<> 2022-07-01T222021.401.json
+
+###
+
+DELETE http://127.0.0.1:5000/users/2
+Content-Type: application/json
+Authorization: TOKEN
+
+<> 2022-07-01T222019.401.json
+
+###
+
+DELETE http://127.0.0.1:5000/users/7
+Content-Type: application/json
+Authorization: TOKEN
+
+<> 2022-07-01T222006.401.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Armen",
+  "password": "test"
+}
+
+<> 2022-07-01T221946.201.json
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Armen",
+  "password": "test",
+  "role": "admin"
+}
+
+<> 2022-07-01T221934.201.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Sasha2",
+  "password": "hello"
+}
+
+<> 2022-07-01T221851.201.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Sasha2",
+  "password": "hello"
+}
+
+<> 2022-07-01T221826.500.json
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Sasha2",
+  "password": "hello",
+  "role": "user"
+}
+
+<> 2022-07-01T221759.201.json
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Sasha2",
+  "password": "hello",
+  "role": "user"
+}
+
+<> 2022-07-01T221721.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T221541.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T221516.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T220659.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T220642.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T220618.500.json
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Sasha",
+  "password": "hello",
+  "role": "admin"
+}
+
+<> 2022-07-01T220534.201.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T220457.500.json
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello",
+  "role": "user"
+}
+
+<> 2022-07-01T220436.201.json
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello",
+  "role": "user"
+}
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello",
+  "role": "user"
+}
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello",
+  "role": "user"
+}
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T220054.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T215952.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T215820.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T215736.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T215657.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T215447.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T215151.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T215144.500.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T214915.404.html
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello",
+  "role": "user"
+}
+
+<> 2022-07-01T214801.201.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T214734.404.html
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T214642.404.html
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T214607.404.html
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T214419.404.html
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T214337.404.html
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T214244.404.html
+
+###
+
+DELETE http://127.0.0.1:5000/users/7
+Content-Type: application/json
+Authorization: TOKEN
+
+<> 2022-07-01T214234.401.json
+
+###
+
+POST http://127.0.0.1:5000/users/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello",
+  "role": "user"
+}
+
+<> 2022-07-01T214215.201.json
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T214152.404.html
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T214131.404.html
+
+###
+
+POST http://127.0.0.1:5000/auth/
+Content-Type: application/json
+
+{
+  "username": "Elina",
+  "password": "hello"
+}
+
+<> 2022-07-01T214113.404.html
+
+###
+

@@ -1,8 +1,9 @@
 from flask import request
 from flask_restx import Namespace, Resource
 
-from dao.model.user import UserSchema
-from implemented import user_service
+from app.dao.model.user import UserSchema
+from app.helpers.decorators import admin_required
+from app.implemented import user_service
 
 user_ns = Namespace('users')
 
@@ -26,8 +27,9 @@ class UsersView(Resource):
 
 @user_ns.route('/<int:uid>')
 class UserView(Resource):
+    @admin_required
     def delete(self, uid):
-        """Представление удаляет пользователя по id"""
+        """Представление удаляет пользователя по id, с ограничением на доступ"""
         user_service.delete(uid)
 
         return "", 204

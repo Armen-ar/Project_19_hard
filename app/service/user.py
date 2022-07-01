@@ -1,7 +1,9 @@
+import base64
 import hashlib
+import hmac
 
-from constants import PWD_HASH_SALT, PWD_HASH_ITERATIONS
-from dao.user import UserDAO
+from app.helpers.constants import PWD_HASH_SALT, PWD_HASH_ITERATIONS
+from app.dao.user import UserDAO
 
 
 class UserService:
@@ -22,7 +24,7 @@ class UserService:
 
     def create(self, user_data):
         """Метод добавляет нового пользователя с хэшированным паролем"""
-        user_data["password"] = self.get_hash(user_data["password"])
+        user_data["password"] = self.generate_password(user_data["password"])
         return self.dao.create(user_data)
 
     def delete(self, uid):
@@ -31,16 +33,30 @@ class UserService:
 
     def update(self, user_data):
         """Метод обновления данных пользователя с хэшированным паролем"""
-        user_data["password"] = self.get_hash(user_data["password"])
+        user_data["password"] = self.generate_password(user_data["password"])
         self.dao.update(user_data)
         return self.dao
 
-    def get_hash(self, password):
+    def generate_password(self, password):
         """Метод хеширование пароля"""
-
-        return hashlib.pbkdf2_hmac(
+        hash_password = hashlib.pbkdf2_hmac(
             'sha256',
             password.encode('utf-8'),
             PWD_HASH_SALT,
             PWD_HASH_ITERATIONS
-        ).decode("utf-8", "ignore")
+        )
+        return base64.b64encode(hash_password)
+
+    def compare_passwords(self, password_hash, other_password) -> bool:
+        """Метод возвращает сравнение бинарных последовательностей чисел(из базы данных 'password_hash'
+         и сгенерированный 'other_password'), возвращает либо True либо False
+         """
+        decoded_digest = base64.b64decode(password_hash)
+
+        hash_digest = hashlib.pbkdf2_hmac(
+            'sha256',
+            other_password.encode('utf-8'),
+            PWD_HASH_SALT,
+            PWD_HASH_ITERATIONS
+        )
+        return hmac.compare_digest(decoded_digest, hash_digest)

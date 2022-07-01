@@ -13,7 +13,7 @@ Accept: application/json
 
 ###
 
-GET http://127.0.0.1:5000/movies/?year=2010
+GET http://127.0.0.1:5000/movies/?year=2020
 Accept: application/json
 
 ###
@@ -33,7 +33,7 @@ Accept: application/json
 
 ###
 
-GET http://127.0.0.1:5000/genres/1
+GET http://127.0.0.1:5000/genres/5
 Accept: application/json
 
 ###
@@ -57,12 +57,11 @@ Content-Type: application/json
 
 ###
 
-PUT http://127.0.0.1:5000/movies/21
+PUT http://127.0.0.1:5000/movies/22
 Accept: application/json
 Content-Type: application/json
 
 {
-  "id": 21,
   "title": "-------",
   "trailer": "-----",
   "year": 0,
@@ -79,18 +78,12 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "title": "-------",
-  "trailer": "-----",
-  "year": 0,
-  "rating": 0,
-  "description": "0 из 10!",
-  "genre_id": 1,
-  "director_id": 1
+  "description": "0 из 5!"
 }
 
 ###
 
-DELETE http://127.0.0.1:5000/movies/21
+DELETE http://127.0.0.1:5000/movies/22
 
 ###
 
@@ -99,9 +92,9 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "username": "David",
-  "password": "@Test3",
-  "role": "user"
+  "username": "Sasha",
+  "password": "@Votetoparol",
+  "role": "admin"
 }
 
 ###
