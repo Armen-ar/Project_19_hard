@@ -22,7 +22,7 @@ class UsersView(Resource):
         data = request.json
         user = user_service.create(data)
 
-        return "", 201, {"location": f"/users/{user.id}"}
+        return f"Пользователь с id {user.id} создан!", 201
 
 
 @user_ns.route('/<int:uid>')

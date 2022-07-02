@@ -30,7 +30,7 @@ class MoviesView(Resource):
         """Представление добавляет новый фильм"""
         req_json = request.json
         movie = movie_service.create(req_json)
-        return "", 201, {"location": f"/movies/{movie.id}"}
+        return f"Фильм с id {movie.id} создан!", 201
 
 
 @movie_ns.route('/<int:mid>')
