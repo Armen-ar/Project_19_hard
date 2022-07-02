@@ -12,7 +12,7 @@ director_ns = Namespace('directors')
 class DirectorsView(Resource):
     @auth_required
     def get(self):
-        """Представление возвращает всех режиссёров"""
+        """Представление возвращает всех режиссёров, допуск auth"""
         rs = director_service.get_all()
         res = DirectorSchema(many=True).dump(rs)
         return res, 200
@@ -30,7 +30,7 @@ class DirectorsView(Resource):
 class DirectorView(Resource):
     @auth_required
     def get(self, uid):
-        """Представление возвращает данные режиссёра по id"""
+        """Представление возвращает данные режиссёра по id, допуск auth"""
         r = director_service.get_one(uid)
         sm_d = DirectorSchema().dump(r)
         return sm_d, 200
@@ -52,7 +52,7 @@ class DirectorView(Resource):
 
     @admin_required
     def patch(self, uid):
-        """Представление обновляет частично данные режиссёра по id"""
+        """Представление обновляет частично данные режиссёра по id, допуск admin"""
         req_json = request.json
         if "id" not in req_json:
             req_json["id"] = uid

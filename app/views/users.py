@@ -29,7 +29,7 @@ class UsersView(Resource):
 class UserView(Resource):
     @admin_required
     def delete(self, uid):
-        """Представление удаляет пользователя по id, с ограничением на доступ"""
+        """Представление удаляет пользователя по id, допуск auth"""
         user_service.delete(uid)
 
         return "", 204

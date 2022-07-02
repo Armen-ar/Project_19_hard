@@ -52,7 +52,7 @@ class GenreView(Resource):
 
     @admin_required
     def patch(self, uid):
-        """Представление обновляет частично жанр по id"""
+        """Представление обновляет частично жанр по id, допуск admin"""
         req_json = request.json
         if "id" not in req_json:
             req_json["id"] = uid
