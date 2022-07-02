@@ -1,16 +1,14 @@
 GET http://127.0.0.1:5000/users/
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
 
 ###
 
 POST http://127.0.0.1:5000/users/
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
 
 {
-  "username": "Nikita",
+  "username": "David",
   "password": "test",
   "role": "user"
 }

@@ -1,61 +1,61 @@
 GET http://127.0.0.1:5000/movies
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ik5pa2l0YSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjU2NzQ5MzMyfQ.6aAwWCjTQuEGEkMBbHRDgIDjHxwJzQXyWA4NymPI_Rc
 
 ###
 
 GET http://127.0.0.1:5000/movies/?director_id=12
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ik5pa2l0YSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjU2NzQ5MzMyfQ.6aAwWCjTQuEGEkMBbHRDgIDjHxwJzQXyWA4NymPI_Rc
 
 ###
 
 GET http://127.0.0.1:5000/movies/?genre_id=4
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ik5pa2l0YSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjU2NzQ5MzMyfQ.6aAwWCjTQuEGEkMBbHRDgIDjHxwJzQXyWA4NymPI_Rc
 
 ###
 
 GET http://127.0.0.1:5000/movies/?year=2020
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ik5pa2l0YSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjU2NzQ5MzMyfQ.6aAwWCjTQuEGEkMBbHRDgIDjHxwJzQXyWA4NymPI_Rc
 
 ###
 
 GET http://127.0.0.1:5000/directors/
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ik5pa2l0YSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjU2NzQ5MzMyfQ.6aAwWCjTQuEGEkMBbHRDgIDjHxwJzQXyWA4NymPI_Rc
 
 ###
 
 GET http://127.0.0.1:5000/directors/1
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA2NjIzfQ.1w0K06euY92kpsRHK7s1fsfjdUGeZfGYS7hkyzAdtsc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ik5pa2l0YSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjU2NzQ5MzMyfQ.6aAwWCjTQuEGEkMBbHRDgIDjHxwJzQXyWA4NymPI_Rc
 
 ###
 
 GET http://127.0.0.1:5000/genres/
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ik5pa2l0YSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjU2NzQ5MzMyfQ.6aAwWCjTQuEGEkMBbHRDgIDjHxwJzQXyWA4NymPI_Rc
 
 ###
 
 GET http://127.0.0.1:5000/genres/5
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ik5pa2l0YSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjU2NzQ5MzMyfQ.6aAwWCjTQuEGEkMBbHRDgIDjHxwJzQXyWA4NymPI_Rc
 
 ###
 
 GET http://127.0.0.1:5000/movies/23
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ik5pa2l0YSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNjU2NzQ5MzMyfQ.6aAwWCjTQuEGEkMBbHRDgIDjHxwJzQXyWA4NymPI_Rc
 
 ###
 
 POST http://127.0.0.1:5000/movies/
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzQ5NTI1fQ.Ox2AfJiALcbQYOzRMA1Zl_6x1UlgKPdahGBHdCmFFIw
 
 {
   "title": "Гарри Поттер мой кумир!",
@@ -70,7 +70,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFyb
 PUT http://127.0.0.1:5000/movies/23
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzQ5NTI1fQ.Ox2AfJiALcbQYOzRMA1Zl_6x1UlgKPdahGBHdCmFFIw
 
 {
   "title": "-------",
@@ -84,10 +84,10 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFyb
 
 ###
 
-PATCH http://127.0.0.1:5000/movies/22
+PATCH http://127.0.0.1:5000/movies/23
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzQ5NTI1fQ.Ox2AfJiALcbQYOzRMA1Zl_6x1UlgKPdahGBHdCmFFIw
 
 {
   "description": "0 из 5!"
@@ -96,19 +96,6 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFyb
 ###
 
 DELETE http://127.0.0.1:5000/movies/23
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzA4NDc0fQ.kISwPkLG1K-_QuZ9mMc7sMRi0W6gdnFhwwszCA6y-qc
-
-###
-
-POST http://127.0.0.1:5000/users/
-Accept: application/json
-Content-Type: application/json
-Authorization: Bearer
-
-{
-  "username": "Sasha",
-  "password": "@Votetoparol",
-  "role": "admin"
-}
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkFybWVuIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjU2NzQ5NTI1fQ.Ox2AfJiALcbQYOzRMA1Zl_6x1UlgKPdahGBHdCmFFIw
 
 ###
