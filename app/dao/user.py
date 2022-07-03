@@ -11,7 +11,7 @@ class UserDAO:
 
     def get_by_username(self, username):
         """Метод возвращает пользователя по имени"""
-        return self.session.query(User).filter(User.username == username).first()
+        return self.session.query(User).filter(User.username == username).one()
 
     def get_all(self):
         """Метод возвращает всех пользователей"""
