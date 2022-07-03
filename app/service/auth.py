@@ -49,7 +49,7 @@ class AuthService:
         """
         Метод получает информацию о пользователе, извлекает значение 'username' и по refresh_token,
         который получил в методе generate_tokens вызывает этот же метод и передаёт туда только
-        username, а refresh_token для получения новой пары токенов
+        username и получает новую пару токенов
         """
         data = jwt.decode(jwt=refresh_token, key=SECRET, algorithms=[ALGORITHM])
         username = data.get("username")
